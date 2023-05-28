@@ -20,19 +20,6 @@ const markup = galleryItems.map(({ preview, original, description }) => {
 });
 // Додавання фрагмента в DOM
 ulEl.insertAdjacentHTML('afterbegin', markup.join(''));
-// ulEl.addEventListener('click', openModal);
-
-// function openModal(event) {
-//   event.preventDefault();
-//   if (event.target.nodeName !== 'IMG') {
-//     return;
-//   }
-//   const lightbox = new simpleLightbox();
-//   lightbox.load({
-//     source: event.target.dataset.source,
-//   });
-// }
-// console.log(galleryItems);
 new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   captionsData: 'Alt',
