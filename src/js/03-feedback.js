@@ -28,7 +28,7 @@ function handleSubmit(event) {
     return console.log('Please fill in all the fields!');
   }
 
-  console.log(`Login: ${email.value}, Password: ${message.value}`);
+  console.log(`Email: ${email.value}, Message: ${message.value}`);
   event.currentTarget.reset();
   localStorage.clear();
 }
