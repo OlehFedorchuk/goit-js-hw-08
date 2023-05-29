@@ -27,8 +27,9 @@ function handleSubmit(event) {
   if (email.value === '' || message.value === '') {
     return console.log('Please fill in all the fields!');
   }
+  let obj = { email: email.value, message: message.value };
+  console.log(obj);
 
-  console.log(`Email: ${email.value}, Message: ${message.value}`);
   event.currentTarget.reset();
-  localStorage.clear();
+  localStorage.removeItem('feedback-form-state');
 }
