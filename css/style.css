@@ -1,0 +1,22 @@
+body {
+    background-color: azure;
+}
+
+* {
+    list-style: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 24px;
+    max-width: 1128px;
+    padding: 0;
+
+}
+
+.gallery-image {
+    width: 360px;
+    height: 200px;
+}
